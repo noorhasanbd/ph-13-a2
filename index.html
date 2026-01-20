@@ -204,12 +204,35 @@
     </main>
 
     <footer>
-        <div class="">
-            
-            <img src="./assets/footer-bg.png" alt="" class="w-full h-[248px]">
-            <img src="./assets/TechWave.png" alt="">
+      <div class="relative">
+        <img src="./assets/footer-bg.png" class="absolute inset-0 w-full h-[248px]" />
 
+        <div class="relative z-10 py-10 flex flex-col items-center">
+            <img src="./assets/TechWave.png" class="mb-6" alt="Logo">
+            <div class="grid grid-cols-2 justify-items-center gap-y-4">
+                
+                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 mt-5">
+                        <img src="./assets/spotify.png" alt="Spotify" class="w-6 h-6">
+                        <h4 class="text-white opacity-65 font-medium text-base">Spotify</h4>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 mt-5">
+                        <img src="./assets/apple-podcast.png" alt="Spotify" class="w-6 h-6">
+                        <h4 class="text-white opacity-65 font-medium text-base">Apple Podcasts</h4>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                        <img src="./assets/youtube.png" alt="Spotify" class="w-6 h-6">
+                        <h4 class="text-white opacity-65 font-medium text-base">YouTube</h4>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                        <img src="./assets/twitter.png" alt="Spotify" class="w-6 h-6">
+                        <h4 class="text-white opacity-65 font-medium text-base">Twitter</h4>
+                    </div>      
+            </div>
+            <p class=" py-4 text-base font-normal text-white text-center">© 2026 TechWave Podcast. All rights reserved.</p>
+            
+     
         </div>
+    </div>
         
     </footer>
   </body>
