@@ -6,7 +6,14 @@
     <title>TechWave</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/custom.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
   </head>
   <body>
     <header class="">
@@ -14,15 +21,35 @@
             <div>
                 <a href=""><h1 class="text-4xl font-bold">Tech Wave</h1></a>
             </div>
-            <div>
+            <div class="hidden md:flex items-center gap-10 font-medium">
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-[#00FF88]">Home</a>
+                <a href="#" class="hover:text-[#00FF88]">Episodes</a>
+                <a href="#" class="hover:text-[#00FF88]">About</a>
+            </div>
+            
+            <button class="px-6 py-2 bg-[linear-gradient(21deg,rgba(255,251,28,1)_17%,rgba(253,29,29,1)_55%,rgba(160,69,252,1)_89%)] text-white rounded-full hover:scale-105 transition">
+                Subscribe
+            </button>
+        </div>
+            <div class="md:hidden">
                 <a href=""><i class="fa-solid fa-bars fa-2x"></i></a>
             </div> 
         </nav>
 
-       <div class="w-full max-w-[440px] h-[466px] mx-auto relative overflow-hidden">
+       <div class="w-full  h-screen  mx-auto relative overflow-hidden">
             <img src="./assets/hero-bg.png" class="absolute inset-0 w-full h-full object-cover scale-110 sm:scale-100" alt="Hero" />
-            <img src="./assets/hero-circle.png" alt="" class="absolute top-40 left-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-auto" alt="Overlay">
-            <img src="./assets/microphone.png" alt="" class="absolute top-40 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-auto" alt="Overlay">
+            <div class="absolute top-40 md:top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+        
+        <img src="./assets/hero-circle.png" 
+             class="relative sm-w-52 md:w-80 lg:w-[400px] h-auto " 
+             alt="Circle Overlay">
+
+        <img src="./assets/microphone.png" 
+             class="absolute w-20 md:w-30 lg:w-30 h-auto drop-shadow-2xl " 
+             alt="Microphone Overlay">
+             
+    </div>
 
             <div class="absolute top-[60%] left-0 w-full text-center z-20">
                 <h2 class="text-white text-5xl font-extrabold ">TechWave</h2>
